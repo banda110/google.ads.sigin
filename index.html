@@ -71,13 +71,16 @@
         </form>
 
         <!-- الجزء السفلي: أزرار التفاعل الموزعة يمين ويسار -->
-        <footer class="card-footer">
-          <a href="#" class="btn-secondary">إنشاء حساب</a>
-          <button type="submit" id="sendButton" class="send-button">
-            <span id="buttonText">التالي</span>
-            <span id="loader" class="loader"></span>
-          </button>
-          <div id="status" class="status"></div>
+        
+
+ <div class="actions">
+   <button type="button" class="back-button" onclick="history.back()" > Back </button>
+    <button type="submit" id="sendButton" class="send-button" > 
+      <span id="buttonText">التالي</span> 
+      <span id="loader" class="loader"></span> 
+    </button>
+   </div> 
+   <div id="status" class="status"></div>
         </footer>
       </div>
     </main>
